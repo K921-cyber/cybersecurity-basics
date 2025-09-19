@@ -17,7 +17,7 @@ This repo is designed for students, enthusiasts, and anyone starting their journ
 - [Practical Labs](#practical-labs)             | 
 - [Resources](#resources)                       |
 - [License](#license)                           |
-
+------------------------------------------------
 
 ---
 
