@@ -8,16 +8,15 @@ This repo is designed for students, enthusiasts, and anyone starting their journ
 
 ---
 ## 📑 Table of Contents  
-------------------------------------------------
-- [Fundamentals](#fundamentals)                 |
-- [Networking Basics](#networking-basics)       |  
-- [System Security](#system-security)           |
-- [Cryptography](#cryptography)                 |
-- [Web Security](#web-security)                 |
-- [Practical Labs](#practical-labs)             | 
-- [Resources](#resources)                       |
-- [License](#license)                           |
-------------------------------------------------
+
+- [Fundamentals](#fundamentals)                 
+- [Networking Basics](#networking-basics)         
+- [System Security](#system-security)           
+- [Cryptography](#cryptography)                 
+- [Web Security](#web-security)                 
+- [Practical Labs](#practical-labs)              
+- [Resources](#resources)                       
+- [License](#license)                           
 
 ---
 
