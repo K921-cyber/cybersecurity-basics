@@ -109,12 +109,6 @@ Think of it as your **digital armor 🛡️** in the connected world.
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Stay-Secure-green?style=for-the-badge&logo=datadog" />
-  <img src="https://img.shields.io/badge/Hack-Responsibly-red?style=for-the-badge&logo=github" />
-</p>  
-
-
 
 
 
@@ -122,6 +116,60 @@ Think of it as your **digital armor 🛡️** in the connected world.
 
 ## 🌐 Networking Basics  
 Understand the **OSI Model**, TCP/IP, common ports, and protocols essential for security.  
+<!-- Animated Banner -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&color=00FFFF&width=800&lines=🌐+Networking+Basics;Connect+⚡+Communicate+⚡+Secure;Master+the+Backbone+of+IT" />
+</p>
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Networking-Basics-1E90FF?style=for-the-badge&logo=cisco" />
+  <img src="https://img.shields.io/badge/Focus-Beginners-FF69B4?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Learn-Practice-32CD32?style=for-the-badge&logo=readthedocs" />
+</p>
+
+---
+
+## 🌌 Introduction  
+
+Networking is the **nervous system of the digital world 🌐**.  
+It connects **devices, servers, and people** so that information flows seamlessly.  
+Without it → the internet wouldn’t exist ⚡.  
+
+---
+
+## 📑 Table of Contents  
+- [📡 Core Concepts](#-core-concepts)  
+- [🗂️ OSI & TCP/IP Models](#️-osi--tcpip-models)  
+- [🌍 IP Addressing](#-ip-addressing)  
+- [🔧 Network Devices](#-network-devices)  
+- [🛡️ Common Protocols](#️-common-protocols)  
+- [⚡ Cheat Sheet](#-cheat-sheet)  
+
+---
+
+## 📡 Core Concepts  
+
+✨ **Networking = Communication between devices**  
+
+- 📬 **Packets** → Small chunks of data sent across a network  
+- 🚦 **Protocols** → Rules that define how data travels  
+- 🌐 **LAN/WAN** → Local vs Wide Area Networks  
+
+---
+
+## 🗂️ OSI & TCP/IP Models  
+
+```yaml
+OSI Model (7 Layers):
+1. 🖥️ Application
+2. 🗂️ Presentation
+3. 💬 Session
+4. 🚚 Transport
+5. 📦 Network
+6. 🔌 Data Link
+7. ⚡ Physical
 
 ---
 
