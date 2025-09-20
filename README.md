@@ -123,13 +123,6 @@ Understand the **OSI Model**, TCP/IP, common ports, and protocols essential for 
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Networking-Basics-1E90FF?style=for-the-badge&logo=cisco" />
-  <img src="https://img.shields.io/badge/Focus-Beginners-FF69B4?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/Learn-Practice-32CD32?style=for-the-badge&logo=readthedocs" />
-</p>
-
----
 
 ## 🌌 Introduction  
 
@@ -170,7 +163,7 @@ OSI Model (7 Layers):
 5. 📦 Network
 6. 🔌 Data Link
 7. ⚡ Physical
-
+```
 ---
 
 ## 🖥️ System Security  
