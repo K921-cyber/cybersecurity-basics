@@ -40,7 +40,9 @@ This repo is designed for students, enthusiasts, and anyone starting their journ
 
 
 # 🔐 Fundamentals of Cybersecurity  
-
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&color=39FF14&width=800&lines=🔐+Fundamentals+of+Cybersecurity;Protect+⚡+Prevent+⚡+Defend;Learn+the+Basics+Like+a+Pro" />
+</p>
 
 Cybersecurity is about **protecting systems, networks, and data** from attacks, damage, or unauthorized access.  
 Think of it as your **digital armor 🛡️** in the connected world.  
