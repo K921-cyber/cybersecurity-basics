@@ -170,7 +170,50 @@ OSI Model (7 Layers):
 
 ## 🖥️ System Security  
 Covers **Linux/Windows basics**, file permissions, and user management for secure systems.  
+<!-- Animated Banner -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&color=FF4500&width=800&lines=🖥️+System+Security;Defend+Your+Devices+⚡;Hardening+the+Operating+System" />
+</p>
 
+---
+
+## 🌌 Introduction  
+
+System Security is all about **protecting operating systems, endpoints, and servers** from unauthorized access, malware, and misuse.  
+Think of it like **locking down the foundation 🏰** of your digital world.  
+
+---
+
+## 📑 Table of Contents  
+- [🔐 Key Areas of System Security](#-key-areas-of-system-security)  
+- [⚔️ Common Attacks](#️-common-attacks)  
+- [🛡️ Defense Mechanisms](#️-defense-mechanisms)  
+- [🌍 Real-World Example](#-real-world-example)  
+- [📚 Quick Summary](#-quick-summary)  
+- [⚡ Cheat Sheet](#-cheat-sheet)  
+
+---
+
+## 🔐 Key Areas of System Security  
+
+- 👤 **User Account Management** → Strong passwords, least privilege access  
+- 🔑 **Authentication** → Passwords, biometrics, tokens  
+- 🛠️ **Patch Management** → Keeping OS & software up to date  
+- 🔒 **Disk Encryption** → Protecting data at rest  
+- 🚪 **Access Controls** → File permissions & system policies  
+- 📊 **Logging & Monitoring** → Detect suspicious activity  
+
+---
+
+## ⚔️ Common Attacks  
+
+```diff
++ 🦠 Malware Infection → Viruses, worms, ransomware  
++ 🎣 Credential Theft → Weak/stolen passwords  
++ 💀 Privilege Escalation → Gaining admin/root access  
++ 🕵️ Rootkits → Hiding malicious processes inside OS  
++ 🔌 Exploiting Unpatched Systems → Using old vulnerabilities  
+```
 ---
 
 ## 🔒 Cryptography  
