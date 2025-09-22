@@ -24,9 +24,6 @@ This repo is designed for students, enthusiasts, and anyone starting their journ
 - Share practical labs and exercises for self-learning  
 - Encourage safe and ethical hacking practices  
 
-
-
-
 ---
 
 
