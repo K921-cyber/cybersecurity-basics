@@ -1,6 +1,6 @@
-🛡️ Cybersecurity Basics  
+## 🛡️ Cybersecurity Basics  
 
-
+---
 A beginner-friendly repository to learn and practice **core concepts of cybersecurity**.  
 This repo is designed for students, enthusiasts, and anyone starting their journey in the security world.  
 
