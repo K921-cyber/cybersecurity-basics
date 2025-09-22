@@ -1,4 +1,4 @@
-# 🛡️ Cybersecurity Basics  
+<p align="center" > 🛡️ Cybersecurity Basics  </p>
 
 
 A beginner-friendly repository to learn and practice **core concepts of cybersecurity**.  
