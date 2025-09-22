@@ -24,13 +24,6 @@ This repo is designed for students, enthusiasts, and anyone starting their journ
 - Share practical labs and exercises for self-learning  
 - Encourage safe and ethical hacking practices  
 
----
-
-## 🛠️ How to Use  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/cybersecurity-basics.git
-   cd cybersecurity-basics
 
 
 
@@ -235,6 +228,16 @@ Hands-on labs and exercises in a **safe environment** (VMs, CTFs, TryHackMe, Hac
 - [HackTheBox](https://www.hackthebox.com/)  
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)  
 
+---
+
+
+
+
+## 🛠️ How to Use  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/cybersecurity-basics.git
+   cd cybersecurity-basics
 ---
 
 ## 📜 License  
