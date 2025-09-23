@@ -206,9 +206,72 @@ Think of it like **locking down the foundation 🏰** of your digital world.
 
 ## 🔒 Cryptography  
 Explore **hashing, symmetric/asymmetric encryption, digital signatures, and TLS/SSL**.  
+<!-- Animated Banner -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&color=FFD700&width=800&lines=🔑+Cryptography;Secure+Data+with+Math+⚡;Encryption+|+Decryption+|+Keys" />
+</p>
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Cryptography-Basics-1E90FF?style=for-the-badge&logo=gnupg" />
+  <img src="https://img.shields.io/badge/Focus-Encryption-FF69B4?style=for-the-badge&logo=protonmail" />
+  <img src="https://img.shields.io/badge/Learn-Practice-32CD32?style=for-the-badge&logo=readthedocs" />
+</p>
+
+---
+
+## 🌌 Introduction  
+
+Cryptography = **Art of securing information with math 🔢 + logic 🧠**.  
+It ensures data is kept **confidential, authentic, and tamper-proof**.  
+
+Think of it as **secret codes 🕵️** that only the right key can unlock.  
+
+---
+
+## 📑 Table of Contents  
+- [🔐 Core Concepts](#-core-concepts)  
+- [🗝️ Types of Cryptography](#️-types-of-cryptography)  
+- [⚔️ Common Attacks](#️-common-attacks)  
+- [🛡️ Real-World Applications](#️-real-world-applications)  
+- [📚 Quick Summary](#-quick-summary)  
+- [⚡ Cheat Sheet](#-cheat-sheet)  
+
+---
+
+## 🔐 Core Concepts  
+
+✨ **Why Cryptography?**  
+- 🔒 Confidentiality → Keeps data secret (encryption)  
+- ✏️ Integrity → Detects tampering (hashing)  
+- ✅ Authentication → Confirms identity (digital signatures)  
+- ⏳ Non-repudiation → Prevents denial of actions (audit logs)  
+
+---
+
+## 🗝️ Types of Cryptography  
+
+| Type | Key Concept | Examples |
+|------|-------------|----------|
+| 🔑 **Symmetric** | Same key for encryption & decryption | AES, DES |
+| 🗝️ **Asymmetric** | Public key (encrypt), Private key (decrypt) | RSA, ECC |
+| 🧾 **Hashing** | One-way function, no decryption | SHA-256, MD5 |
+| 📝 **Digital Signatures** | Verifies authenticity & integrity | RSA-Sign, ECDSA |
+
+---
+
+## ⚔️ Common Attacks  
+
+```diff
++ 🦠 Brute Force → Trying every key until success  
++ 🎣 Man-in-the-Middle (MITM) → Intercepting & altering data  
++ 💀 Replay Attacks → Reusing old communication packets  
++ 🕵️ Weak Hash Exploits → Cracking MD5, SHA-1  
+
+---
+```
+---
 ## 🛡️ Web Security  
 Dive into the **OWASP Top 10**, common web app attacks, and secure coding practices.  
 
