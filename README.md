@@ -143,3 +143,12 @@ graph LR
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style G fill:#bbf,stroke:#333,stroke-width:2px
 <details> <summary>🔻 <strong>Click to expand: Detailed Breakdown of Stages</strong></summary>
+    
+Stage,Attacker Action,Defender Countermeasure
+1. Recon,"OSINT (LinkedIn, Shodan), Scanning.","Reduce digital footprint, Threat Intel."
+2. Weaponization,Creating a PDF with a hidden script.,"File analysis, Sandboxing."
+3. Delivery,"Phishing email, Bad USB.","Email Gateways, User Awareness Training."
+4. Exploitation,Triggering the buffer overflow.,"Patch Management, ASLR/DEP."
+5. Installation,Installing a backdoor/Rootkit.,"Endpoint Detection (EDR), HIPS."
+6. C2,"""Phone home"" to attacker server.","Firewall rules, Traffic Analysis."
+7. Actions,"Ransomware encryption, Data Exfiltration.","DLP, Backups, Incident Response."
