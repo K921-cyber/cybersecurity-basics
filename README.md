@@ -18,3 +18,50 @@
 
 # 📁 Repository Structure
 
+
+---
+
+# 🧭 Navigation  
+- [Phase 1: Foundations](#-phase-1-the-foundations)  
+- [Phase 2: Attack Lifecycle](#-phase-2-the-attack-lifecycle)  
+- [Phase 3: Defensive Engineering](#-phase-3-defensive-engineering-blue-team)  
+- [Phase 4: Offensive Operations](#️-phase-4-offensive-operations-red-team)  
+- [Toolbox](#-the-toolbox-industry-standards)  
+- [Project Library](#-project-library-build-to-learn)  
+- [Practice Labs](#-the-dojo-practice-platforms)  
+
+---
+
+# 🧠 Phase 1: The Foundations
+
+### 🔺 CIA Triad
+
+| Pillar | Meaning | Example |
+|--------|---------|---------|
+| **Confidentiality** | Only the right people see data | *Equifax breach* |
+| **Integrity** | Data isn't tampered | *SolarWinds attack* |
+| **Availability** | Systems stay online | *DDoS attacks* |
+
+---
+
+### 🔐 AAA — Identity & Access
+
+- **Authentication** — Who are you?  
+- **Authorization** — What can you access?  
+- **Accounting** — What did you do?  
+
+---
+
+# 🦠 Phase 2: The Attack Lifecycle
+
+```mermaid
+graph LR
+    A[Recon] --> B[Weaponization]
+    B --> C[Delivery]
+    C --> D[Exploitation]
+    D --> E[Installation]
+    E --> F[C2]
+    F --> G[Actions]
+
+    style A fill:#f9f
+    style G fill:#bbf
