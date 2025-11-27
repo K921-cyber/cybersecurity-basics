@@ -67,6 +67,7 @@ graph LR
     style G fill:#bbf
 ```
 <details> <summary>🔻 Expand Breakdown</summary>
+
 ## 🛡️ Cyber Kill Chain Overview
 
 | **Stage**       | **Example**                  | **Defense**          |
