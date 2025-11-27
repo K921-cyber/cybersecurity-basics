@@ -68,8 +68,8 @@ graph LR
 ```
 <details> <summary>🔻 Expand Breakdown</summary>
 ----------------------------------------------------    
-Stage	|Example|	Defense
-Recon	|OSINT, scanning	|Reduce footprint        |
+Stage	|Example|	Defense    |
+Recon	|          OSINT, scanning            |Reduce footprint        |
 Weaponization	|Creating malware	|Sandboxing      |
 Delivery	|Phishing emails|	Email filters        |
 Exploitation	|Triggering CVEs	|Patching        |
