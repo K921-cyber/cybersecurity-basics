@@ -81,3 +81,53 @@ graph LR
 | Actions         | Ransomware, exfiltration     | IR, backups           |
 
 </details>
+
+
+## 🛡️ Phase 3: Defensive Engineering (Blue Team)
+
+### 🏛 Frameworks
+- **NIST CSF**
+- **MITRE ATT&CK**
+- **Zero Trust Architecture**
+
+---
+
+### 🧰 Defensive Stack
+
+| Layer | Tools | Purpose |
+|--------|--------------------------|------------------------|
+| **SIEM** | Wazuh, Splunk | Detection & correlation |
+| **EDR** | CrowdStrike, SentinelOne | Endpoint protection |
+| **SOAR** | XSOAR, Tines | Automated response |
+
+---
+
+## ⚔️ Phase 4: Offensive Operations (Red Team)
+
+| Assessment | Goal | Scope |
+|------------|---------------------|------------------------|
+| **Vulnerability Assessment** | Weakness discovery | Broad |
+| **Penetration Test** | Exploit weaknesses | Targeted |
+| **Red Team Simulation** | Full attack simulation | Stealth & persistence |
+
+---
+
+## 🗺 Career Navigator
+
+```mermaid
+graph TD
+    Start((Start)) --> Basics[Networking & Linux]
+    Basics --> Path{Choose Track}
+
+    Path --> Blue[🔵 Blue Team]
+    Blue --> SOC
+    Blue --> SecurityEngineer
+    Blue --> GRC
+
+    Path --> Red[🔴 Red Team]
+    Red --> Pentester
+    Red --> ExploitDev
+
+    Path --> Purple[🟣 Forensics]
+    Purple --> DFIR
+    Purple --> MalwareAnalyst
