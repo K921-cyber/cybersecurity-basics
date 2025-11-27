@@ -67,12 +67,12 @@ graph LR
     style G fill:#bbf
 ```
 <details> <summary>🔻 Expand Breakdown</summary>
-Stage	Example	Defense
-Recon	OSINT, scanning	Reduce footprint
-Weaponization	Creating malware	Sandboxing
-Delivery	Phishing emails	Email filters
-Exploitation	Triggering CVEs	Patching
-Installation	Backdoors	EDR
-C2	Command channel	Firewall rules
-Actions	Ransomware, exfiltration	IR, backups
+Stage	|Example|	Defense
+Recon	|OSINT, scanning	|Reduce footprint
+Weaponization	|Creating malware	|Sandboxing
+Delivery	|Phishing emails|	Email filters
+Exploitation	|Triggering CVEs	|Patching
+Installation	|Backdoors	|EDR
+C2	|Command channel	|Firewall rules
+Actions	|Ransomware, exfiltration	|IR, backups
 </details>
