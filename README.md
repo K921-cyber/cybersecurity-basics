@@ -63,8 +63,8 @@ graph LR
     E --> F[C2]
     F --> G[Actions]
 
-    style A fill:#052efa
-    style G fill:#fa0505
+    style A fill:#fa0505 
+    style G fill:#052efa
 ```
 <details> <summary>🔻 Expand Breakdown</summary>
 
