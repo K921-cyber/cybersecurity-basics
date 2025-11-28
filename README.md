@@ -56,7 +56,7 @@
 
 ```mermaid
 graph LR
-    A[Recon] --> B[Weaponization]
+    Recom --> B[Weaponization]
     B --> C[Delivery]
     C --> D[Exploitation]
     D --> E[Installation]
