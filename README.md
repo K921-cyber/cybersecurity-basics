@@ -131,3 +131,70 @@ graph TD
     Path --> Purple[🟣 Forensics]
     Purple --> DFIR
     Purple --> MalwareAnalyst
+
+```
+## 🛠 The Toolbox
+
+### 🐧 Operating Systems
+- **Kali Linux**
+- **Parrot OS**
+- **Flare VM**
+- **Security Onion**
+
+---
+
+### 🔧 Essential Tools
+
+| Category | Tools |
+|----------|-----------------------------|
+| **Scanning** | Nmap |
+| **Web Testing** | Burp Suite |
+| **Cracking** | Hashcat, John |
+| **Network Analysis** | Wireshark |
+| **Exploitation** | Metasploit |
+| **Directory Busting** | Gobuster |
+
+---
+
+## 🏗 Project Library
+
+| Level | Project | Skills |
+|-------|----------------------|---------------------------------------------|
+| 🟢 Beginner | Keylogger | Hooks, I/O |
+| 🟢 Beginner | Port Scanner | Sockets |
+| 🟡 Intermediate | SIEM Lab | Log ingestion, dashboards |
+| 🟡 Intermediate | Phishing Analyzer | APIs, parsing |
+| 🔴 Advanced | Ransomware Decryptor | Cryptography & Reverse Engineering |
+| 🔴 Advanced | AD Pentest Lab | Kerberos, LDAP |
+
+---
+
+## 🥋 The Dojo (Practice Platforms)
+
+| Platform | Best For |
+|----------|------------------------------|
+| **TryHackMe** | Guided cybersecurity learning |
+| **HackTheBox** | Realistic pentesting labs |
+| **OverTheWire** | Linux & basics |
+| **Blue Team Labs Online** | SOC, DFIR |
+
+---
+
+## 📜 Legal & Ethics
+
+⚠️ **Unauthorized hacking is illegal.**  
+Only test on:
+
+- Your own infrastructure  
+- Authorized CTFs  
+- Bug bounty programs  
+
+---
+
+<div align="center">
+
+⭐ **Star this repo if this guide helped you!**  
+**Fork → Improve → PR**
+
+</div>
+
