@@ -66,3 +66,78 @@ graph LR
     D --> E[Installation]
     E --> F[Command & Control]
     F --> G[Actions on Objectives]
+```
+<details>
+<summary>🔻 Expand Breakdown</summary>
+
+### 🛡️ Cyber Kill Chain Overview
+
+| **Stage** | **Example** | **Defense** |
+|---|---|---|
+| **Reconnaissance** | OSINT, port scanning, social media analysis. | Minimize public footprint, firewall whitelisting. |
+| **Weaponization** | Embedding a macro in a Word doc, creating a payload. | Not directly defensible; focus on later stages. |
+| **Delivery** | Phishing emails, malicious USB drives, watering hole attacks. | Email security gateways, user training, network filtering. |
+| **Exploitation** | Triggering a buffer overflow (CVE), tricking a user. | Vulnerability patching, access control, memory protection. |
+| **Installation** | Installing a backdoor, scheduled task persistence. | EDR/XDR, file integrity monitoring, app whitelisting. |
+| **Command & Control (C2)** | Beaconing to attacker infrastructure. | Egress filtering, DNS sinkholing. |
+| **Actions on Objectives** | Data exfiltration, ransomware, lateral movement. | IR playbooks, backups, segmentation. |
+
+</details>
+
+---
+
+# 🛡️ Phase 3: Defensive Engineering (Blue Team)
+
+### 🏛 Frameworks & Models
+- **NIST Cybersecurity Framework (CSF)** — Identify, Protect, Detect, Respond, Recover
+- **MITRE ATT&CK** — Real-world adversary tactics & techniques
+- **Zero Trust Architecture (ZTA)** — Never trust, always verify
+
+### 🧰 The Modern Defensive Stack
+
+| Layer | Tools | Purpose |
+|---|---|---|
+| **SIEM** | Wazuh, Splunk, QRadar, Elastic SIEM | Log aggregation & correlation |
+| **EDR/XDR** | CrowdStrike, SentinelOne, Microsoft Defender | Endpoint protection & response |
+| **SOAR** | Palo Alto XSOAR, Tines, Splunk SOAR | Response automation |
+| **Firewall/NGFW** | Palo Alto, Fortinet, Cisco | Traffic filtering |
+| **Threat Intel** | Recorded Future, Mandiant, VirusTotal | Threat awareness |
+
+---
+
+# ⚔️ Phase 4: Offensive Operations (Red Team)
+
+| Assessment Type | Goal | Scope & Mindset |
+|---|---|---|
+| **Vulnerability Assessment** | Identify weaknesses | Broad & automated |
+| **Penetration Test** | Prove real impact | Targeted & methodical |
+| **Red Team Simulation** | Test detection & response | Stealthy & persistent |
+
+---
+
+# 🌐 Phase 5: Advanced Domains
+
+### ☁️ Cloud Security
+- **Shared Responsibility Model**
+- **Identity & Access Management (IAM)**
+- **CSPM** — Wiz, Prisma Cloud
+- **CWPP** — Cloud workload protection
+
+### 💻 Application Security (AppSec)
+- **OWASP Top 10**
+- **SAST** — SonarQube, Checkmarx
+- **DAST** — OWASP ZAP, Burp Suite
+- **SCA** — Snyk, Dependabot
+
+---
+
+# 🗺 Career Navigator
+
+```mermaid
+graph TD
+    Start((Start Here)) --> Basics[Networking, OS, Scripting]
+    Basics --> Blue[Blue Team]
+    Basics --> Red[Red Team]
+    Basics --> Purple[Forensics]
+    Basics --> Orange[Security Engineering]
+    Basics --> Green[GRC]
