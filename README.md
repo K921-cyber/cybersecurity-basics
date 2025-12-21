@@ -141,3 +141,111 @@ graph TD
     Basics --> Purple[Forensics]
     Basics --> Orange[Security Engineering]
     Basics --> Green[GRC]
+```
+## 🏅 Key Certifications
+
+| Certification | Issuer | Best For | Track |
+|---|---|---|---|
+| **CompTIA Security+** | CompTIA | Foundations | Entry |
+| **CISSP** | (ISC)² | Leadership | GRC |
+| **OSCP** | Offensive Security | Pentesting | Red |
+| **GCIH** | GIAC | Incident Response | Blue |
+| **eJPT** | INE | Junior Pentesting | Red |
+| **CCSP** | (ISC)² | Cloud Security | Cloud |
+
+---
+
+## 🛠 The Toolbox
+
+### 🐧 Operating Systems
+- **Kali Linux**
+- **Parrot OS**
+- **Flare VM**
+- **Security Onion**
+- **Commando VM**
+
+### 🔧 Essential Tools
+
+| Category | Tools |
+|---|---|
+| **Recon** | Nmap, Masscan, ffuf, Gobuster |
+| **Web** | Burp Suite, OWASP ZAP |
+| **Cracking** | Hashcat, John, Hydra |
+| **Network** | Wireshark, tcpdump |
+| **Exploitation** | Metasploit, SQLMap |
+| **Reverse Engineering** | Ghidra, IDA Pro |
+| **Active Directory** | BloodHound, Mimikatz |
+
+---
+
+## 🏗 Project Library: Build to Learn
+
+| Level | Project | Skills |
+|---|---|---|
+| **Beginner** | Python Port Scanner | Networking |
+| **Beginner** | Log Parser | Regex, File I/O |
+| **Intermediate** | SIEM Lab | Log Analysis |
+| **Intermediate** | Malware Sandbox | RE Basics |
+| **Intermediate** | CloudGoat | Cloud Hardening |
+| **Advanced** | AD Pentest Lab | Lateral Movement |
+| **Advanced** | Ransomware Decryptor | Cryptography & RE |
+
+---
+
+## 🥋 The Dojo: Practice Platforms
+
+| Platform | Best For | Price |
+|---|---|---|
+| **TryHackMe** | Guided learning | Freemium |
+| **Hack The Box** | Realistic labs | Freemium |
+| **OverTheWire** | Fundamentals | Free |
+| **Blue Team Labs** | SOC & DFIR | Freemium |
+| **LetsDefend** | SOC training | Freemium |
+| **PortSwigger Academy** | Web security | Free |
+
+---
+
+## 📚 Further Learning & Resources
+
+### 📖 Essential Reading
+- *The Phoenix Project*
+- *Hacking: The Art of Exploitation*
+- *Practical Malware Analysis*
+- *The Cuckoo's Egg*
+
+### 📰 Blogs & News
+- Krebs on Security
+- The Hacker News
+- Dark Reading
+- BleepingComputer
+
+### 📺 YouTube
+- The Cyber Mentor
+- John Hammond
+- Hak5
+- IppSec
+
+---
+
+## 📜 Legal & Ethics
+
+⚠️ **Unauthorized access is illegal.**  
+Practice only on systems you **own** or have **explicit permission** to test.
+
+---
+
+## 📄 How to Contribute
+- Fork the repository  
+- Create a feature branch  
+- Commit your changes  
+- Push to your branch  
+- Open a Pull Request  
+
+---
+
+<div align="center">
+
+⭐ **Star this repo if this guide helped you!** ⭐  
+**Fork → Improve → Pull Request**
+
+</div>
