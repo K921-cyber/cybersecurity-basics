@@ -1,34 +1,4 @@
-```mermaid
-flowchart TD
 
-%% ---- CLIENT ----
-A[User Opens Gmail] --> B[Chrome Extension Scans Email]
-B --> C[Send Email Text and Links to Backend]
-
-%% ---- BACKEND ----
-subgraph Backend["Backend Processing"]
-    C --> D[AI Model • Predict Phishing Probability]
-    C --> E[Forensic Check • Whois Domain Age]
-
-    D --> F[Risk Engine Combines Results]
-    E --> F
-end
-
-%% ---- DECISION ----
-F --> G{Final Risk Level}
-
-G -- High --> H[Verdict • Malicious 🚨]
-G -- Medium --> I[Verdict • Suspicious ⚠️]
-G -- Low --> J[Verdict • Safe ✅]
-
-%% ---- RETURN RESULT ----
-H --> K[Send Verdict to Extension]
-I --> K
-J --> K
-
-K --> L[Show Traffic Light Indicator to User]
-
-```
 
 
 # 🛡️ The Zero-to-Hero Cybersecurity Handbook
