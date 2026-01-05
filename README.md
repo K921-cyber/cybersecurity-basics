@@ -1,48 +1,64 @@
 ```mermaid
-graph TD
-    %% Define Styles
-    classDef client fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    classDef server fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
-    classDef external fill:#fff3e0,stroke:#e65100,stroke-width:2px;
-    classDef data fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+flowchart TD
 
-    subgraph "Client-Side (Browser Environment)"
-        A(User Opens Gmail) --> B[Gmail Tab DOM];
-        B -->|Extract Text & Links| C[Chrome Extension\n Content Script];
-        C -->|User Clicks Scan| D[Popup UI\n Traffic Light Displa];
-    end
+%% =========================
+%% STYLES
+%% =========================
+classDef client fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+classDef server fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+classDef external fill:#fff3e0,stroke:#e65100,stroke-width:2px;
+classDef data fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
 
-    C -->|HTTP POST JSON| E[Flask API Server];
+%% =========================
+%% CLIENT SIDE
+%% =========================
+subgraph Client_Side_Browser_Environment["Client Side - Browser Environment"]
+    A[User Opens Gmail] --> B[Gmail Tab DOM]
+    B -->|Extract Text and Links| C[Chrome Extension Content Script]
+    C -->|User Clicks Scan| D[Popup UI - Traffic Light Display]
+end
 
-    subgraph "Server-Side [Python Backend]"
-        E -->|Route: /scan| F{Analysis Controller};
-        
-        %% ML Engine Flow
-        F -->|Send Text| G[ML Engine\n Random Forest];
-        H[Trained Model\n.pkl] -.->|Load Model| G;
-        I[Vectorizer\n.pk] -.->|Load Vectorizer| G;
-        G -->|Return Probability %| F;
+C -->|HTTP POST JSON| E[Flask API Server]
 
-        %% Forensic Engine Flow
-        F -->|Send Links| J[Forensic Engine\n OSINT];
-        J -->|Extract Domain| K Whois Lookup;
-        
-        %% Logic
-        K -->|Query Registration Date| L[Whois Database];
-        L -->|Return Date| K;
-        K -->|Calculate Domain Age| J;
-        J -->|Return Flag| F;
-    end
+%% =========================
+%% SERVER SIDE
+%% =========================
+subgraph Server_Side_Python_Backend["Server Side - Python Backend"]
+    
+    E -->|Route: /scan| F{Analysis Controller}
+    
+    %% ML PIPELINE
+    F -->|Send Text| G[ML Engine - Random Forest]
+    H[Trained Model .pkl] -.->|Load Model| G
+    I[Vectorizer .pkl] -.->|Load Vectorizer| G
+    G -->|Return Probability Percent| F
 
-    F -->|Synthesize Verdict| E;
-    E -->|JSON Response\n{Verdict, Score, Reasons}| C;
-    C -->|Update DOM| D;
+    %% FORENSIC ENGINE
+    F -->|Send Links| J[Forensic Engine - OSINT]
+    J -->|Extract Domain| K[Whois Lookup]
 
-    %% Apply Styles
-    class A,B,C,D client;
-    class E,F,G,J,K server;
-    class L external;
-    class H,I data;
+    K -->|Query Registration Date| L[Whois Database]
+    L -->|Return Date| K
+    K -->|Calculate Domain Age| J
+
+    J -->|Return Risk Flag| F
+end
+
+%% =========================
+%% RESPONSE
+%% =========================
+F -->|Synthesize Verdict| E
+E -->|JSON Response: Verdict Score Reasons| C
+C -->|Update DOM| D
+
+%% =========================
+%% APPLY STYLES
+%% =========================
+class A,B,C,D client;
+class E,F,G,J,K server;
+class L external;
+class H,I data;
+
 ```
 
 
