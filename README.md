@@ -1,42 +1,48 @@
 ```mermaid
 graph TD
-    A([Start: User Opens Gmail]) --> B{User Clicks 'Scan Email'?}
-    B -- No --> A
-    B -- Yes --> C[Extension Extracts Email Body and Links]
-    C --> D[Send Data to Python Backend API]
-    
-    subgraph Backend_Analysis_Engine["Backend Analysis Engine"]
-        D --> E{Parallel Analysis}
-        
-        E --> F[Module 1: AI Intent Analysis]
-        F --> F1[Random Forest Model]
-        F1 --> F2[Calculate Phishing Probability Percentage]
-        
-        E --> G[Module 2: Forensic Validator]
-        G --> G1[Extract Domain from Links]
-        G1 --> G2[Perform Whois Lookup]
-        G2 --> G3{Is Domain Younger Than 30 Days?}
-        G3 -- Yes --> H[Flag as HIGH RISK]
-        G3 -- No --> I[Flag as SAFE]
-    end
-    
-    F2 --> J[Aggregated Risk Score Calculation]
-    H --> J
-    I --> J
-    
-    J --> K{Risk Score Above 80?}
-    K -- Yes --> L[Verdict: MALICIOUS - Red]
-    K -- No --> M{Risk Score Above 40?}
-    M -- Yes --> N[Verdict: SUSPICIOUS - Yellow]
-    M -- No --> O[Verdict: SAFE - Green]
-    
-    L --> P[Send Response to Extension]
-    N --> P
-    O --> P
-    
-    P --> Q[Display Traffic Light Alert and Reasons]
-    Q --> R([End: User Takes Action])
+    %% Define Styles
+    classDef client fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef server fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+    classDef external fill:#fff3e0,stroke:#e65100,stroke-width:2px;
+    classDef data fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
 
+    subgraph "Client-Side (Browser Environment)"
+        A(User Opens Gmail) --> B[Gmail Tab DOM];
+        B -->|Extract Text & Links| C[Chrome Extension\n Content Script];
+        C -->|User Clicks Scan| D[Popup UI\n Traffic Light Displa];
+    end
+
+    C -->|HTTP POST JSON| E[Flask API Server];
+
+    subgraph "Server-Side [Python Backend]"
+        E -->|Route: /scan| F{Analysis Controller};
+        
+        %% ML Engine Flow
+        F -->|Send Text| G[ML Engine\n Random Forest];
+        H[Trained Model\n.pkl] -.->|Load Model| G;
+        I[Vectorizer\n.pk] -.->|Load Vectorizer| G;
+        G -->|Return Probability %| F;
+
+        %% Forensic Engine Flow
+        F -->|Send Links| J[Forensic Engine\n OSINT];
+        J -->|Extract Domain| K Whois Lookup;
+        
+        %% Logic
+        K -->|Query Registration Date| L[Whois Database];
+        L -->|Return Date| K;
+        K -->|Calculate Domain Age| J;
+        J -->|Return Flag| F;
+    end
+
+    F -->|Synthesize Verdict| E;
+    E -->|JSON Response\n{Verdict, Score, Reasons}| C;
+    C -->|Update DOM| D;
+
+    %% Apply Styles
+    class A,B,C,D client;
+    class E,F,G,J,K server;
+    class L external;
+    class H,I data;
 ```
 
 
