@@ -1,63 +1,32 @@
 ```mermaid
 flowchart TD
 
-%% =========================
-%% STYLES
-%% =========================
-classDef client fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-classDef server fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
-classDef external fill:#fff3e0,stroke:#e65100,stroke-width:2px;
-classDef data fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+%% ---- CLIENT ----
+A[User Opens Gmail] --> B[Chrome Extension Scans Email]
+B --> C[Send Email Text and Links to Backend]
 
-%% =========================
-%% CLIENT SIDE
-%% =========================
-subgraph Client_Side_Browser_Environment["Client Side - Browser Environment"]
-    A[User Opens Gmail] --> B[Gmail Tab DOM]
-    B -->|Extract Text and Links| C[Chrome Extension Content Script]
-    C -->|User Clicks Scan| D[Popup UI - Traffic Light Display]
+%% ---- BACKEND ----
+subgraph Backend["Backend Processing"]
+    C --> D[AI Model • Predict Phishing Probability]
+    C --> E[Forensic Check • Whois Domain Age]
+
+    D --> F[Risk Engine Combines Results]
+    E --> F
 end
 
-C -->|HTTP POST JSON| E[Flask API Server]
+%% ---- DECISION ----
+F --> G{Final Risk Level}
 
-%% =========================
-%% SERVER SIDE
-%% =========================
-subgraph Server_Side_Python_Backend["Server Side - Python Backend"]
-    
-    E -->|Route: /scan| F{Analysis Controller}
-    
-    %% ML PIPELINE
-    F -->|Send Text| G[ML Engine - Random Forest]
-    H[Trained Model .pkl] -.->|Load Model| G
-    I[Vectorizer .pkl] -.->|Load Vectorizer| G
-    G -->|Return Probability Percent| F
+G -- High --> H[Verdict • Malicious 🚨]
+G -- Medium --> I[Verdict • Suspicious ⚠️]
+G -- Low --> J[Verdict • Safe ✅]
 
-    %% FORENSIC ENGINE
-    F -->|Send Links| J[Forensic Engine - OSINT]
-    J -->|Extract Domain| K[Whois Lookup]
+%% ---- RETURN RESULT ----
+H --> K[Send Verdict to Extension]
+I --> K
+J --> K
 
-    K -->|Query Registration Date| L[Whois Database]
-    L -->|Return Date| K
-    K -->|Calculate Domain Age| J
-
-    J -->|Return Risk Flag| F
-end
-
-%% =========================
-%% RESPONSE
-%% =========================
-F -->|Synthesize Verdict| E
-E -->|JSON Response: Verdict Score Reasons| C
-C -->|Update DOM| D
-
-%% =========================
-%% APPLY STYLES
-%% =========================
-class A,B,C,D client;
-class E,F,G,J,K server;
-class L external;
-class H,I data;
+K --> L[Show Traffic Light Indicator to User]
 
 ```
 
