@@ -70,7 +70,7 @@ graph LR
     E --> F[Command & Control]
     F --> G[Actions on Objectives]
 ```
-<details>
+
 <summary>🔻 Expand Breakdown</summary>
 
 ### 🛡️ Cyber Kill Chain Overview
