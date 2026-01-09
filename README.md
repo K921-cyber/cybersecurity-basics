@@ -213,3 +213,72 @@ graph TD
     Basics --> GRC
     Basics --> Cloud
 ```
+## 💡 Beginner Advice
+
+> **Start with SOC or Blue Team → then specialize.**
+
+---
+
+## 🏅 Certifications (WHEN READY)
+
+| Certification | Level |
+|---|---|
+| **Security+** | Beginner |
+| **eJPT** | Beginner |
+| **GCIH** | Intermediate |
+| **OSCP** | Advanced |
+| **CISSP** | Senior |
+
+⚠️ **Do skills first, certifications later.**
+
+---
+
+## 🥋 The Dojo: Practice Platforms
+
+| Platform | Focus |
+|---|---|
+| **TryHackMe** | Guided learning |
+| **Hack The Box** | Realistic labs |
+| **PortSwigger Academy** | Web security |
+| **LetsDefend** | SOC training |
+| **OverTheWire** | Linux basics |
+
+---
+
+## 🧠 How to Study Cybersecurity (IMPORTANT)
+
+### ✅ Do This
+- Learn concepts
+- Practice immediately
+- Write notes
+- Break things
+- Fix them
+
+### ❌ Avoid This
+- Memorizing tools
+- Rushing certifications
+
+---
+
+## ⚖️ Legal & Ethics
+
+🚨 **Only test systems you own or have explicit permission for.**  
+Cybersecurity without ethics = **crime**.
+
+---
+
+## 🤝 How to Contribute
+
+- Add learning resources
+- Improve explanations
+- Add beginner labs
+- Fix errors
+
+---
+
+<div align="center">
+
+⭐ **Star → Fork → Learn → Teach Others** ⭐  
+**This handbook grows with the community.**
+
+</div>
