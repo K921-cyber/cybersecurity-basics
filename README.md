@@ -71,9 +71,8 @@ graph LR
     F --> G[Actions on Objectives]
 ```
 
-<summary>🔻 Expand Breakdown</summary>
 
-### 🛡️ Cyber Kill Chain Overview
+## 🛡️ Cyber Kill Chain Overview
 
 | **Stage** | **Example** | **Defense** |
 |---|---|---|
