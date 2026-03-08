@@ -61,6 +61,10 @@ Progress through each phase sequentially, but feel free to dive deeper into topi
 
 - **Operating Systems**
   - [CS50: Introduction to Computer Science](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x)
+
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/179108a9-7d7e-4e77-b1ea-75f8b39c34b5" />
+
+  
   - [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
   - [MIT 6.S081: Operating System Engineering](https://pdos.csail.mit.edu/6.S081/2020/)
   - [Introduction to Operating Systems – Georgia Tech (Udacity)](https://www.udacity.com/course/introduction-to-operating-systems--ud923)
@@ -1402,6 +1406,7 @@ Contributions to this roadmap are welcome! Please feel free to submit a pull req
 <p align="center">
   <i>"The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards." - Gene Spafford</i>
 </p>
+
 
 
 
